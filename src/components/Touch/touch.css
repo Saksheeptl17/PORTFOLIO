@@ -1,0 +1,226 @@
+.contact-container {
+     max-width: 600px;
+     margin: auto;
+     padding: 20px;
+     background: transparent;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     border-radius: 12px;
+     text-align: center;
+     animation: fadeIn 1s ease-in-out;
+}
+
+.contact-title {
+     font-size: 2.9rem;
+     color: rgb(32, 122, 183);
+     text-align: center;
+     margin: 0 auto;
+     width: 40%;
+     animation: slideIn 1s ease-out;
+}
+
+.who {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 20px;
+}
+
+.line {
+     width: 50px;
+     height: 2px;
+     background-color: #007bff;
+     margin: 0 10px;
+}
+
+.who-i-am {
+     font-size: 18px;
+     font-weight: bold;
+}
+
+.contact-me {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     align-items: center;
+     animation: fadeIn 1s ease-in-out;
+}
+
+.contact-input,
+.contact-textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     background: transparent;
+     color: #ffffff;
+     transition: all 0.3s ease-in-out;
+     font-size: 1rem;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+     border-color: #007bff;
+     box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+     outline: none;
+     transform: scale(1.02);
+}
+
+.contact-textarea {
+     height: 100px;
+     resize: none;
+}
+
+.contact-button {
+     width: 40%;
+     padding: 12px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+     text-align: center;
+     font-size: 1rem;
+     animation: fadeIn 1.2s ease-in-out;
+}
+
+.contact-button:hover {
+     background-color: #0056b3;
+     transform: scale(1.05);
+     box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.5);
+}
+
+.lets-talk {
+     margin-top: 30px;
+     text-align: center;
+     animation: fadeIn 1s ease-in-out;
+}
+
+.lets-talk-title {
+     font-size: 2.5rem;
+     font-weight: bold;
+     color: #f5f7f9;
+     margin-bottom: 15px;
+}
+
+.lets-talk-item {
+     font-size: 1.2rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     margin: 8px 0;
+     transition: transform 0.3s;
+}
+
+.lets-talk-item:hover {
+     transform: scale(1.05);
+}
+
+.icon {
+     font-size: 1.5rem;
+     color: #f8f9f9;
+}
+
+footer {
+     margin-top: 40px;
+     padding: 20px;
+     color: white;
+     text-align: center;
+     animation: slideUp 1s ease-in-out;
+}
+
+footer .social-icons {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     margin-top: 15px;
+}
+
+footer .social-icons a {
+     font-size: 1.5rem;
+     color: rgb(240, 223, 223);
+     transition: all 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+     color: #f9fbfd;
+     transform: scale(1.4);
+}
+
+hr {
+     border: none;
+     height: 1.4px;
+     background-color: #212121;
+     width: 100%;
+     margin: 20px 0;
+}
+
+
+@keyframes slideIn {
+     from {
+          opacity: 0;
+          transform: translateX(-50px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+          transform: translateY(20px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+@keyframes slideUp {
+     from {
+          opacity: 0;
+          transform: translateY(50px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+@media (max-width: 768px) {
+     .contact-container {
+          width: 90%;
+          padding: 15px;
+     }
+
+     .contact-title {
+          font-size: 2.5rem;
+     }
+
+     .contact-input,
+     .contact-textarea {
+          font-size: 0.9rem;
+     }
+
+     .contact-button {
+          font-size: 0.9rem;
+     }
+
+     .lets-talk-title {
+          font-size: 2rem;
+     }
+
+     footer {
+          padding: 15px;
+     }
+
+     footer .social-icons a {
+          font-size: 1.2rem;
+     }
+}

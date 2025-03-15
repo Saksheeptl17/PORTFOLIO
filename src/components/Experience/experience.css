@@ -1,0 +1,36 @@
+#experience {
+     padding: 70px;
+     /* background: rgb(26, 26, 26); */
+   }
+
+.experience{
+     font-size: 2.9rem;
+     color: rgb(32, 122, 183);
+     text-align: center;
+     margin: 0 auto;
+     width: fit-content;
+     border-bottom: 2px white;
+}
+
+.line-ed {
+     width: 230px;
+     height: 3px;
+     background-color: rgb(253, 253, 253);
+     margin: 0 auto;
+     margin-top: 8px;
+     display: block;
+   }
+
+   .exp {
+     text-align: center;
+     padding-top: 1.2rem;
+   }
+
+   .details {
+     font-size: medium;
+     font-weight: 150;
+     letter-spacing: 1.3px;
+     padding-top: 0.5rem;
+   }
+
+   

@@ -1,0 +1,100 @@
+.navbar {
+     height: 5rem;
+     width: 100%;
+     max-width: 75rem;
+     margin: 0 auto;
+     padding: 1rem 2rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+}
+
+.logo {
+     object-fit: cover;
+     height: 3rem;
+     width: 4rem;
+}
+
+.desktopMenu {
+     display: flex;
+     gap: 0.8rem;
+}
+
+.desktopMenuListIteam {
+     margin: 1rem;
+     cursor: pointer;
+     font-size: 1rem;
+     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.desktopMenuListIteam:hover {
+     color: rgba(0,103,155,255);
+     padding-bottom: 0.5rem;
+     border-bottom: 3px solid rgb(111, 180, 225);
+}
+
+.desktopMenuBtn {
+     background: white;
+     color: rgb(7, 7, 7);
+     border: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0.5rem 1.5rem;
+     border-radius: 2rem;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.desktopMenuBtn:hover {
+     background: rgba(82, 181, 230, 0.863);
+     transform: scale(1.05);
+     color: white;
+}
+
+.desktopMenuImg {
+     object-fit: cover;
+     height: 1rem;
+     width: 1rem;
+     margin-right: 0.5rem;
+}
+
+.menu-icon {
+     display: none;
+     font-size: 1.5rem;
+     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+     .desktopMenu {
+          display: none;
+          position: absolute;
+          top: 5rem;
+          right: 0;
+          width: 60%;
+          height: 100vh;
+          background: rgb(27, 26, 26);
+          color: white;
+          flex-direction: column;
+          text-align: center;
+          padding-top: 2rem;
+          box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+     }
+
+     .desktopMenu.active {
+          display: flex;
+     }
+
+     .desktopMenuListIteam {
+          margin: 1rem 0;
+          font-size: 1.2rem;
+     }
+
+     .menu-icon {
+          display: block;
+     }
+}

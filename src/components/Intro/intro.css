@@ -1,0 +1,211 @@
+#intro {
+     height: calc(100vh - 4rem);
+     width: 100vw;
+     max-width: 75rem;
+     margin: 0 auto;
+     overflow: hidden;
+     position: relative;
+
+}
+
+.bg {
+     position: absolute;
+     top: -1rem;
+     right: 0;
+     z-index: -2;
+     object-fit: cover;
+     height: 99vh;
+     padding-right: 6rem;
+     animation: fadeIn 2s ease-in-out;
+}
+
+.introContent {
+     height: 100vh;
+     width: 100vw;
+     padding: 2rem;
+     font-size: 3rem;
+     font-weight: 700;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     position: relative;
+     animation: slideIn 1.5s ease-out;
+}
+
+.hello {
+     font-size: 1.75rem;
+     font-weight: 100;
+     white-space: nowrap;
+     overflow: hidden;
+     border-right: 2px solid transparent;
+}
+
+.IntroName {
+     color: rgb(32, 122, 183);
+     display: inline-block;
+     overflow: hidden;
+     white-space: nowrap;
+     border-right: 2px solid rgba(32, 122, 183, 0.8);
+     animation: typing 3s steps(20) 1s forwards, blink 0.6s step-end infinite;
+
+}
+
+.Intro {
+     display: inline-block;
+     white-space: nowrap;
+     /* Ensure the text stays on one line */
+     line-height: 1.2;
+}
+
+.IntroName,
+.typing {
+     display: inline-block;
+     vertical-align: middle;
+}
+
+
+.Intropara {
+     font-size: medium;
+     font-weight: 150;
+     letter-spacing: 1.3px;
+}
+
+.btn {
+     background: #629fc3cc;
+     margin: 1rem 0;
+     padding: 0.75rem 1.5rem;
+     border: none;
+     border-radius: 2rem;
+     margin-right: 1.4rem;
+     color: rgba(115, 190, 227, 0.726);
+     padding-right: 2rem;
+     padding-right: 1rem;
+     cursor: pointer;
+     display: flex;
+     transition: all 0.3s ease-in-out;
+}
+
+.btn1 {
+     background: rgba(32, 122, 183, 0.8);
+     margin: 1rem 0;
+     padding: 0.75rem 1.5rem;
+     border: none;
+     border-radius: 2rem;
+     margin-right: 1.4rem;
+     color: white;
+     padding-right: 2rem;
+     padding-right: 1rem;
+     cursor: pointer;
+     display: flex;
+     transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+     background: #f0f0f0;
+}
+
+.btn1:hover {
+     transform: scale(1.05);
+}
+
+
+.btnImg {
+     object-fit: cover;
+     margin: 0 0.25rem;
+     height: 1rem;
+     padding-right: 0.5rem;
+}
+
+@media screen and (max-width:840px) {
+     .bg {
+          right: -10vw;
+     }
+
+     .introContent {
+          font-size: 10vw;
+     }
+
+     .hello {
+          font-size: 4.5vw;
+     }
+}
+
+
+@media screen and (max-width:480px) {
+     .bg {
+          right: -20vw;
+     }
+}
+
+@keyframes typing {
+     from {
+          width: 0;
+     }
+
+     to {
+          width: 100%;
+     }
+}
+
+@keyframes blink {
+
+     from,
+     to {
+          border-right-color: transparent;
+     }
+
+     50% {
+          border-right-color: black;
+     }
+}
+
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
+
+@keyframes slideIn {
+     from {
+          transform: translateX(-100%);
+     }
+
+     to {
+          transform: translateX(0);
+     }
+}
+
+.typing {
+     display: inline-block;
+     overflow: hidden;
+     white-space: nowrap;
+}
+
+@keyframes typing {
+     from {
+          width: 0;
+     }
+
+     to {
+          width: 14ch;
+          /* Adjust to the length of \"Web Developer\" */
+     }
+}
+
+@keyframes blink {
+
+     from,
+     to {
+          border-color: transparent;
+     }
+
+     50% {
+          border-color: rgba(32, 122, 183, 0.8);
+     }
+}
