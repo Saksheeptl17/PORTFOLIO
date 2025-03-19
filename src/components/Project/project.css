@@ -1,98 +1,106 @@
 .project-section {
   text-align: center;
-  padding: 20px;
+  padding: 50px 20px;
   color: white;
+  background-color: #121212;
 }
 
 .main-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 3rem;
+  color: #2093d1;
+  margin-bottom: 10px;
 }
 
 .underline {
-  width: 80px;
+  width: 100px;
   height: 4px;
-  background-color: #007bff;
-  margin: 0 auto 20px;
+  background-color: #2093d1;
+  margin: 0 auto 30px;
   animation: underline-expand 1s ease-in-out infinite alternate;
 }
 
 @keyframes underline-expand {
   from { width: 60px; }
-  to { width: 100px; }
+  to { width: 120px; }
 }
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .project-card {
-  background: #222;
+  background: #1e1e1e;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
 .project-video-container {
   width: 100%;
-  height: 72%;
+  height: 250px;
 }
 
 .project-video {
   width: 100%;
-  height: 100%;
+  height: 105%;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .project-info {
-  height: 25%;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
-  background: rgba(49, 48, 48, 0.8);
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: rgba(49, 48, 48, 0.9);
+  font-size: 1rem;
 }
 
-/* Buttons positioned right below text */
 .project-buttons {
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-bottom: -12px;
   display: flex;
   justify-content: center;
   gap: 15px;
-  flex-wrap: wrap;
 }
 
 .btn {
-  padding: 9px 15px;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  display: inline-block;
+  transition: background 0.3s ease;
 }
 
 .btn-primary {
-  background: #007bff;
+  background: #2093d1;
   color: white;
 }
 
+.btn-primary:hover {
+  background: #186ea3;
+}
+
 .btn-secondary {
-  background: #555;
-  color: white;
+  background: #faf9f9;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #ddd;
+}
+
+.project-info h3 {
+  color: #6ec5e2;
+  font-size: 22px;
+  margin-bottom: 8px;
 }
